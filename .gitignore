@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Sensitive data
+profile*.json
+finance_data.json
+mastercard_summary.json
+change_journal.csv
+
+# Backups
+*.bak
+*.bak*
+
+# Model files
+*.safetensors
+mistral_training/*/model-*.safetensors
+mistral_training/*/adapter_model.safetensors
+training_data.jsonl
+
+# Generated content
+reports/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
