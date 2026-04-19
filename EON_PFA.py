@@ -27,7 +27,10 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 
-import matplotlib.pyplot as plt
+try:
+	import matplotlib.pyplot as plt
+except ImportError:
+	plt = None
 
 try:
 	from llama_cpp import Llama
