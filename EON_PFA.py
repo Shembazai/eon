@@ -1111,6 +1111,9 @@ def count_change_journal_entries():
 # -------------------- Analysis Layer --------------------
 
 def build_pie_chart(category_totals, title, output_path):
+	if plt is None:
+		return None
+
 	filtered = {}
 
 	for label, value in category_totals.items():
