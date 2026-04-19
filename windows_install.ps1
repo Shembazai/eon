@@ -43,10 +43,10 @@ if ($LASTEXITCODE -ne 0) {
     throw "Failed to upgrade pip."
 }
 
-Write-Host "Installing requirements..."
-& "$venvPython" -m pip install -r requirements.txt
+Write-Host "Installing core requirements..."
+& "$venvPython" -m pip install -r requirements-core.txt
 if ($LASTEXITCODE -ne 0) {
-    throw "Failed to install requirements."
+    throw "Failed to install core requirements."
 }
 
 if ($ModelPath) {
