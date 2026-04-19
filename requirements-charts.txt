@@ -1,0 +1,2 @@
+# EON PFA optional chart rendering
+matplotlib

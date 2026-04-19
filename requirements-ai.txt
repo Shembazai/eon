@@ -1,0 +1,2 @@
+# EON PFA local AI extras
+llama-cpp-python
